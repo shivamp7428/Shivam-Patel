@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { ThemeContext } from '../context/ThemeContext';
+import { ThemeContext } from '../context/ThemeContext.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from './ThemeToggle.jsx';
 
