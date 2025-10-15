@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { ThemeContext } from '../context/ThemeContext.jsx';
 import { motion, AnimatePresence } from 'framer-motion';
-import ThemeToggle from './ThemeToggle.jsx';
+
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -14,7 +13,7 @@ const navItems = [
 const GlassNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { theme } = useContext(ThemeContext);
+  
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -57,13 +56,12 @@ const GlassNavbar = () => {
           </motion.a>
         ))}
 
-        <ThemeToggle />
+       
         <a href="tel:+918871736638" className={buttonClass}>CONTACT ME</a>
       </nav>
 
       {/* Mobile Menu Button */}
       <div className="md:hidden flex items-center">
-        <ThemeToggle />
         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="ml-4 text-gray-900 dark:text-gray-200">
           {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
