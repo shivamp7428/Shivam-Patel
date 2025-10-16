@@ -35,12 +35,13 @@ const Home = () => {
           className="flex space-x-4 mt-4"
         >
          <a
-           href="/assets/Shivam Patel Resume.pdf" // file ko public/assets/ folder me rakho
-           download="Shivam Patel Resume.pdf"
-           className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300"
-          >
-          Download Resume
-       </a>
+           href="/Shivam_Patel_Resume.pdf"
+           download="Shivam_Patel_Resume.pdf"
+            className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300"
+           >
+           Download Resume
+           </a>
+
 
           <a
             href="tel:+918871736638"
