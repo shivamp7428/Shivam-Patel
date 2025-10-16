@@ -35,7 +35,7 @@ const Home = () => {
           className="flex space-x-4 mt-4"
         >
          <a
-           href="/public/Shivam Patel Resume.pdf" // file ko public/assets/ folder me rakho
+           href="/assets/Shivam Patel Resume.pdf" // file ko public/assets/ folder me rakho
            download="Shivam Patel Resume.pdf"
            className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300"
           >
