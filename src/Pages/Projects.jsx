@@ -57,6 +57,24 @@ const projectsData = [
         imagePlaceholder: "https://res.cloudinary.com/drlcjjixb/image/upload/v1760563860/Screenshot_2025-10-16_023714_wmo1zs.png",
         githubUrl: "https://github.com/shivamp7428",
     },
+     {
+        id: 7,
+        title: "Veda Diet",
+        description: "On this website you may know what is the diet today and talk with AI chat for any question.!",
+        tags: ["React.js", "Node.js", "Tailwindcss", "MongoDB"],
+        icon: <FaHeartbeat className="text-pink-500" />,
+        imagePlaceholder: "https://res.cloudinary.com/drlcjjixb/image/upload/v1760604047/Screenshot_2025-10-16_023336_cq4ux6.png",
+        githubUrl: "https://github.com/shivamp7428/Prototype",
+    },
+      {
+        id: 8,
+        title: "Coaching Platform",
+        description: "This project is fully working with backend and frontend. in this platform you can take addmission on coaching center and take online classes and many more.!",
+        tags: ["React.js", "Node.js", "Tailwindcss", "MongoDB"],
+        icon: <FaHeartbeat className="text-pink-500" />,
+        imagePlaceholder: "https://res.cloudinary.com/drlcjjixb/image/upload/v1760604279/Screenshot_2025-10-16_023531_fa32u8.png",
+        githubUrl: "https://github.com/shivamp7428/COMPUTER-COACHING",
+    },
 ];
 
 const backdropVariants = {
