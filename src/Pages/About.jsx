@@ -112,6 +112,60 @@ const modalVariants = {
     exit: { y: "100vh", opacity: 0 },
 };
 
+const ProjectModal = ({ project, onClose }) => {
+    if (!project) return null;
+
+    return (
+        <AnimatePresence>
+            <motion.div
+                className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
+                style={{ backgroundColor: 'rgba(0, 0, 0, 0.9)' }}
+                variants={backdropVariants}
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                onClick={onClose}
+            >
+                <motion.div
+                    className="relative w-full max-w-4xl max-h-[90vh] bg-white dark:bg-gray-800 rounded-lg shadow-2xl overflow-hidden"
+                    variants={modalVariants}
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <button
+                        className="absolute top-4 right-4 z-10 p-2 text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition"
+                        onClick={onClose}
+                        aria-label="Close modal"
+                    >
+                        <FaTimes className="text-xl" />
+                    </button>
+
+                    <div className="w-full h-auto max-h-[70vh] overflow-y-auto">
+                        <img
+                            src={project.imagePlaceholder}
+                            alt={`Full screenshot of ${project.title}`}
+                            className="w-full object-contain"
+                        />
+                    </div>
+
+                    <div className="p-4 sm:p-6 text-center border-t border-gray-200 dark:border-gray-700">
+                        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
+                            {project.title}
+                        </h3>
+                        <a
+                            href={project.githubUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-6 py-2 text-white bg-gray-900 dark:bg-indigo-600 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
+                        >
+                            <SiCrunchyroll className="mr-2 text-lg" /> Visit Company
+                        </a>
+                    </div>
+                </motion.div>
+            </motion.div>
+        </AnimatePresence>
+    );
+};
+
 
 
 const ProjectCard = ({ project, onImageClick }) => {
