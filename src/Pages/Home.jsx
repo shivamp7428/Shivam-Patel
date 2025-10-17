@@ -16,14 +16,17 @@ const Home = () => {
           transition={{ duration: 0.7 }}
           className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100"
         >
-          Hi, I&apos;m <span className="text-indigo-600">Shivam</span>
+          Hi, I&apos;m
+          <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <a href="https://shivam-patel-zy5a.vercel.app/"> 𝓢hivam</a>
+          </span>
         </motion.h1>
 
         <motion.p
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.7 }}
-          className="text-gray-700 dark:text-gray-300 text-lg md:text-xl max-w-md"
+          className="text-gray-700 dark:text-gray-300  md:text-xl max-w-md"
         >
           I am a Computer Engineering student & Full Stack Developer passionate about building beautiful and functional web apps.
         </motion.p>
@@ -32,12 +35,12 @@ const Home = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.7 }}
-          className="flex space-x-4 mt-4"
+          className="flex md:space-x-4 space-x-2 mt-4"
         >
          <a
            href="/Shivam_Patel_Resume.pdf"
            download="Shivam_Patel_Resume.pdf"
-            className="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300"
+            className="md:px-6 px-3 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300"
            >
            Download Resume
            </a>
@@ -45,7 +48,7 @@ const Home = () => {
 
           <a
             href="tel:+918871736638"
-            className="px-6 py-3 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition duration-300"
+            className="md:px-6 px-3 py-3 border-2 border-indigo-600 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-600 hover:text-white transition duration-300"
           >
             Contact Me
           </a>

@@ -13,7 +13,16 @@ const Footer = () => {
         {/* Left - Logo & Text */}
         <div className="text-center flex justify-center items-center gap-1  md:text-left">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-100 tracking-wide">
-            SP<span className="text-indigo-600"></span>
+          <motion.div
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            className="ml-4 md:ml-12 text-2xl md:text-3xl font-extrabold cursor-pointer select-none"
+          >
+            <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+             <a href="https://shivam-patel-zy5a.vercel.app/">𝓢𝓟</a>
+            </span>
+          </motion.div>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 mt-1 text-sm">
             © {new Date().getFullYear()} All Rights Reserved.

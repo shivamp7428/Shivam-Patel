@@ -71,7 +71,7 @@ const projectsData = [
         id: 1,
         title: "Cognifyz Technologies",
         description: "I have done my intership Journey at Cognifyz from May to Sep and  this journey with Cognifyz was amazing.",
-        tags: ["Full Stack Web Development"],
+        tags: ["Web Development"],
         icon: <FaLaptopCode className="text-red-500" />,
         imagePlaceholder: "https://res.cloudinary.com/drlcjjixb/image/upload/v1760720443/Screenshot_2025-10-17_222733_qscfxp.png",
         githubUrl: " https://cognifyz.com/",
@@ -80,7 +80,7 @@ const projectsData = [
         id: 2,
         title: "Oasis Infobyte",
         description: "This company offered me a one-month internship, I was looking for a full-time job after completing my internship at Cognifyz.",
-        tags: ["Full Stack Web Development"],
+        tags: ["Web Development"],
         icon: <FaGlobe className="text-blue-500" />,
         imagePlaceholder: "https://res.cloudinary.com/drlcjjixb/image/upload/v1760720419/Screenshot_2025-10-17_222707_wlciin.png",
         githubUrl: "https://oasisinfobyte.com/",
@@ -89,7 +89,7 @@ const projectsData = [
         id: 3,
         title: " Internship Certificate ",
         description: "I’m glad to share that I’ve successfully completed my internship at Cognifyz Technologies and received my Internship Completion Certificate.",
-        tags: ["Full Stack Web Development"],
+        tags: [" Web Development"],
         icon: <FaGlobe className="text-blue-500" />,
         imagePlaceholder: "https://res.cloudinary.com/drlcjjixb/image/upload/v1760720431/Screenshot_2025-10-17_222722_xpuhcw.png",
         githubUrl: "https://cognifyz.com/",
@@ -112,59 +112,7 @@ const modalVariants = {
     exit: { y: "100vh", opacity: 0 },
 };
 
-const ProjectModal = ({ project, onClose }) => {
-    if (!project) return null;
 
-    return (
-        <AnimatePresence>
-            <motion.div
-                className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
-                style={{ backgroundColor: 'rgba(0, 0, 0, 0.9)' }}
-                variants={backdropVariants}
-                initial="hidden"
-                animate="visible"
-                exit="hidden"
-                onClick={onClose}
-            >
-                <motion.div
-                    className="relative w-full max-w-4xl max-h-[90vh] bg-white dark:bg-gray-800 rounded-lg shadow-2xl overflow-hidden"
-                    variants={modalVariants}
-                    onClick={(e) => e.stopPropagation()}
-                >
-                    <button
-                        className="absolute top-4 right-4 z-10 p-2 text-white bg-indigo-600 rounded-full hover:bg-indigo-700 transition"
-                        onClick={onClose}
-                        aria-label="Close modal"
-                    >
-                        <FaTimes className="text-xl" />
-                    </button>
-
-                    <div className="w-full h-auto max-h-[70vh] overflow-y-auto">
-                        <img
-                            src={project.imagePlaceholder}
-                            alt={`Full screenshot of ${project.title}`}
-                            className="w-full object-contain"
-                        />
-                    </div>
-
-                    <div className="p-4 sm:p-6 text-center border-t border-gray-200 dark:border-gray-700">
-                        <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2">
-                            {project.title}
-                        </h3>
-                        <a
-                            href={project.githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center justify-center px-6 py-2 text-white bg-gray-900 dark:bg-indigo-600 rounded-lg font-semibold hover:bg-indigo-700 transition-colors"
-                        >
-                            <FaGithub className="mr-2 text-lg" /> View Code
-                        </a>
-                    </div>
-                </motion.div>
-            </motion.div>
-        </AnimatePresence>
-    );
-};
 
 const ProjectCard = ({ project, onImageClick }) => {
     return (
@@ -193,7 +141,7 @@ const ProjectCard = ({ project, onImageClick }) => {
                 </motion.div>
 
                 <div className="p-6 flex flex-col flex-grow">
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-gray-100 mb-2 border-b-2 border-indigo-400/50 pb-1">
+                    <h3 className="md:text-xl text-sm font-bold text-gray-900 dark:text-gray-100 mb-2 border-b-2 border-indigo-400/50 pb-1">
                         {project.title}
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm md:text-base flex-grow">
@@ -215,10 +163,9 @@ const ProjectCard = ({ project, onImageClick }) => {
                         href={project.githubUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-full px-4 py-3 text-white bg-gray-900 dark:bg-indigo-600 rounded-lg font-semibold hover:bg-indigo-700 dark:hover:bg-indigo-700 transition-colors duration-300 mt-auto"
+                        className="flex text-sm md:text-lg items-center justify-center w-full px-4 py-3 text-white bg-gray-900 dark:bg-indigo-600 rounded-lg font-semibold hover:bg-indigo-700 dark:hover:bg-indigo-700 transition-colors duration-300 mt-auto"
                     >
-                       
-                  <SiCrunchyroll className="mr-2 text-xl" /> Visit Company
+                   <SiCrunchyroll className="mr-2 text-xl" /> Visit Company
                     </a>
                 </div>
             </div>
@@ -269,7 +216,8 @@ const About = () => {
   
   return (
     <>
-    <div id="about" className="pt-28 md:pt-40 pb-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
+     <div className="overflow-x-hidden">
+ <div id="about" className="pt-28 md:pt-40 pb-20 bg-gray-50 dark:bg-gray-900 min-h-screen">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         
         {/* --- Main Header --- */}
@@ -344,16 +292,16 @@ const About = () => {
             </ul>
           </motion.div>
         </div>
- <section
+          <section
                 id="projects"
-                className="min-h-screen px-0 sm:px-6 pt-28 md:pt-40 py-20 bg-gray-50 dark:bg-gray-900 relative"
+                className="min-h-screen px-0 sm:px-6 pt-15 md:pt-30 py-20 bg-gray-50 dark:bg-gray-900 relative"
             >
                 <div className="max-w-7xl mx-auto px-6 sm:px-0">
                     <motion.h2
                         initial={{ y: -50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.7 }}
-                        className="text-4xl md:text-5xl font-extrabold text-center mb-16 text-gray-900 dark:text-gray-100 px-4 sm:px-0"
+                        className="text-4xl animate-pulse md:text-5xl font-extrabold text-center mb-16 text-gray-900 dark:text-gray-100 px-4 sm:px-0"
                     >
                         Work & <span className="text-indigo-600 dark:text-pink-400">Experience</span>
                     </motion.h2>
@@ -433,7 +381,7 @@ const About = () => {
         </div>
       </div>
     </div>
-
+     </div>
     </>
   );
 };

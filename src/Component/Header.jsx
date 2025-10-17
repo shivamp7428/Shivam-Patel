@@ -33,14 +33,17 @@ const GlassNavbar = () => {
       className={`fixed top-0 left-0 right-0 z-50 p-5 md:p-8 flex justify-between items-center transition-all duration-300 ease-in-out ${glassClass}`}
     >
       {/* Logo */}
-      <motion.div
-        initial={{ x: -50, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="text-2xl font-black text-gray-900 dark:text-gray-200 ml-4 md:ml-12"
-      >
-        Shivam 
-      </motion.div>
+     <motion.div
+  initial={{ x: -50, opacity: 0 }}
+  animate={{ x: 0, opacity: 1 }}
+  transition={{ duration: 0.5 }}
+  className="ml-4 md:ml-12 text-2xl md:text-3xl font-extrabold cursor-pointer select-none"
+>
+  <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+     <a href="https://shivam-patel-zy5a.vercel.app/">𝓢𝓟</a>
+  </span>
+</motion.div>
+
 
       {/* Desktop Nav */}
       <nav className="hidden md:flex items-center space-x-6 md:space-x-8 mr-4 md:mr-12">
@@ -87,7 +90,7 @@ const GlassNavbar = () => {
                 {item.name}
               </a>
             ))}
-            <button className={buttonClass}>CONTACT ME</button>
+            <a href="tel:+918871736638" className={buttonClass}>CONTACT ME</a>
           </motion.div>
         )}
       </AnimatePresence>
