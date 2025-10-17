@@ -12,7 +12,7 @@ const timeline = [
   { year: "2024 March", event: "Built first full-stack project.", icon: <FaLaptopCode /> },
   { year: "2024", event: "Participated in Hackathons.", icon: <TbHeartHandshake /> },
   { year: "2025 May - Sep", event: "Internship at Cognifyz Technologies.", icon: <FaStar /> },
-  { year: "2025 Sep", event: "I cleared all the online rounds and then attended an interview at Infosys.", icon: <SiInfosys /> },
+  { year: "2025 Oct", event: "I cleared all the online rounds and then attended an interview at Infosys.", icon: <SiInfosys /> },
 ];
 
 const aboutData = [
