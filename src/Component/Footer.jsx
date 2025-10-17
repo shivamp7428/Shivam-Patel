@@ -52,7 +52,7 @@ const Footer = () => {
         <FaEnvelope />
         </a>
        <a
-         href="https://wa.me/918871736638?text=Hello%2C%20I%20want%20to%20know%20more"
+         href="https://wa.me/918871736638?text=Hello%2C%20I%20want%20to%20know%20more%20about%20you"
          target="_blank"
          rel="noopener noreferrer"
         className="text-gray-700 dark:text-gray-300 hover:text-green-500 transition-all flex items-center"
