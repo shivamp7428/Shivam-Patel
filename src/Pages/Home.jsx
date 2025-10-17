@@ -18,7 +18,7 @@ const Home = () => {
         >
           Hi, I&apos;m
           <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-          <a href="https://shivam-patel-zy5a.vercel.app/"> 𝓢𝓱𝓲𝓿𝓪𝓶 <span className="hidden md:inline">𝓟𝓪𝓽𝓮𝓵</span></a>
+          <a href="https://shivam-patel-zy5a.vercel.app/"> 𝓢𝓱𝓲𝓿𝓪𝓶 𝓟𝓪𝓽𝓮𝓵</a>
 
           </span>
         </motion.h1>
