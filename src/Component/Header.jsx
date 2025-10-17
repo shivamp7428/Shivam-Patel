@@ -34,13 +34,13 @@ const GlassNavbar = () => {
     >
       {/* Logo */}
      <motion.div
-  initial={{ x: -50, opacity: 0 }}
+     initial={{ x: -50, opacity: 0 }}
   animate={{ x: 0, opacity: 1 }}
   transition={{ duration: 0.5 }}
   className="ml-4 md:ml-12 text-2xl md:text-3xl font-extrabold cursor-pointer select-none"
 >
   <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-     <a href="https://shivam-patel-zy5a.vercel.app/">𝓢𝓟</a>
+     <a href="https://shivam-patel-zy5a.vercel.app/">𝓢𝓱𝓲𝓿𝓪𝓶</a>
   </span>
 </motion.div>
 

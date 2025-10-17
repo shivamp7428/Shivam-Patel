@@ -20,7 +20,7 @@ const Footer = () => {
             className="ml-4 md:ml-12 text-2xl md:text-3xl font-extrabold cursor-pointer select-none"
           >
             <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-             <a href="https://shivam-patel-zy5a.vercel.app/">𝓢𝓟</a>
+             <a href="https://shivam-patel-zy5a.vercel.app/">SP</a>
             </span>
           </motion.div>
           </h2>
