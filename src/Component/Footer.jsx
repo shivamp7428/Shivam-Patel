@@ -51,12 +51,15 @@ const Footer = () => {
          >
         <FaEnvelope />
         </a>
-        <a
-            href="tel:+918871736638"
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition-all"
-         >
-        <FaWhatsapp />
-        </a>
+       <a
+         href="https://wa.me/918871736638?text=Hello%2C%20I%20want%20to%20know%20more"
+         target="_blank"
+         rel="noopener noreferrer"
+        className="text-gray-700 dark:text-gray-300 hover:text-green-500 transition-all flex items-center"
+        >
+        <FaWhatsapp size={24} />
+      </a>
+
         </div>
 
         {/* Right - Tagline */}
