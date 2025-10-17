@@ -4,9 +4,10 @@ import { FaGraduationCap, FaHeart, FaStar, FaGamepad, FaLaptopCode } from "react
 import { TbHeartHandshake } from "react-icons/tb";
 // --- Original Data (Enhanced with icons for timeline) ---
 const timeline = [
-  { year: "2023", event: "Started Computer Science Engineering at IES University", icon: <FaGraduationCap /> },
-  { year: "2024", event: "Built first full-stack project", icon: <FaLaptopCode /> },
+  { year: "2023 June", event: "Started Computer Science Engineering at IES University", icon: <FaGraduationCap /> },
+  { year: "2024 March", event: "Built first full-stack project", icon: <FaLaptopCode /> },
   { year: "2024", event: "Participated in Hackathons", icon: <TbHeartHandshake /> },
+  { year: "2025 May - Sep", event: "Internship at Cognifyz Technologies", icon: <FaStar /> },
   { year: "2025", event: "Internship at Cognifyz Technologies", icon: <FaStar /> },
 ];
 
@@ -85,7 +86,18 @@ const About = () => {
             transition={{ duration: 0.7 }}
             className="lg:w-1/3 p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-xl border border-indigo-200 dark:border-indigo-700/50"
           >
-            <img src="https://res.cloudinary.com/drlcjjixb/image/upload/v1760554031/postImages/unwd3bfvgpjdbav2d5zs.jpg" alt="" className="h-100 w-full pr-5 pl-5" />
+            <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 0.5, duration: 0.7, type: "spring", stiffness: 100 }}
+        className="flex-1 mt-10 md:mt-0 flex justify-center"
+      >
+        <img
+          src="https://res.cloudinary.com/drlcjjixb/image/upload/v1760554031/postImages/unwd3bfvgpjdbav2d5zs.jpg"
+          alt="Profile"
+          className="w-64 mb-5 md:mb-0 md:w-80 md:h-130  rounded-md mt-5 object-cover  "
+        />
+      </motion.div>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
               I am a passionate Computer Engineering student and a dedicated Full Stack Developer. My focus is on creating responsive, intuitive, and visually appealing web applications. I love diving into new technologies and turning complex ideas into clean, functional code.
             </p>
