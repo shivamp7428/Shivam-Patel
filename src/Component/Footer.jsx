@@ -64,6 +64,18 @@ const Footer = () => {
           “Built with ❤️ and React + Tailwind + Backend”
         </p>
       </motion.div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4f46e5"/> 
+      <stop offset="50%" stop-color="#a855f7"/> 
+      <stop offset="100%" stop-color="#ec4899"/> 
+    </linearGradient>
+  </defs>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="48" font-family="cursive" fill="url(#grad)">
+    𝓢𝓟
+  </text>
+</svg> 
     </footer>
   );
 };

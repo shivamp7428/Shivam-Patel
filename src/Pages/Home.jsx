@@ -9,7 +9,7 @@ const Home = () => {
       className="min-h-screen flex flex-col md:flex-row  items-center justify-center px-6 md:px-20 bg-gradient-to-b from-gray-100 dark:from-gray-900 to-white dark:to-gray-800"
     >
       {/* Left Side: Text */}
-      <div className="flex-1 flex flex-col items-start pt-20 md:items-start space-y-4">
+      <div className="flex-1  flex flex-col items-start md:pt-20 pt-30 md:items-start space-y-4">
         <motion.h1
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -18,7 +18,8 @@ const Home = () => {
         >
           Hi, I&apos;m
           <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              <a href="https://shivam-patel-zy5a.vercel.app/"> 𝓢hivam</a>
+          <a href="https://shivam-patel-zy5a.vercel.app/"> 𝓢hivam <span className="hidden md:inline">𝓟atel</span></a>
+
           </span>
         </motion.h1>
 
