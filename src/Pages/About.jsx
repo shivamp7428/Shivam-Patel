@@ -301,7 +301,7 @@ const About = () => {
         className="flex-1 mt-10 md:mt-0 flex justify-center"
       >
         <img
-          src="https://res.cloudinary.com/drlcjjixb/image/upload/v1760554031/postImages/unwd3bfvgpjdbav2d5zs.jpg"
+          src="https://avatars.githubusercontent.com/u/201252003?v=4"
           alt="Profile"
           className="w-64 mb-5 md:mb-0 md:w-80 md:h-130  rounded-md mt-5 object-cover  "
         />
